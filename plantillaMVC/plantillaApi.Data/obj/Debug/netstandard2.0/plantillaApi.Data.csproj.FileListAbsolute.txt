@@ -1,0 +1,9 @@
+D:\Repositorio\plantillaMVC\plantillaApi.Data\bin\Debug\netstandard2.0\plantillaApi.Data.deps.json
+D:\Repositorio\plantillaMVC\plantillaApi.Data\bin\Debug\netstandard2.0\plantillaApi.Data.dll
+D:\Repositorio\plantillaMVC\plantillaApi.Data\obj\Debug\netstandard2.0\plantillaApi.Data.csprojAssemblyReference.cache
+D:\Repositorio\plantillaMVC\plantillaApi.Data\obj\Debug\netstandard2.0\plantillaApi.Data.csproj.CoreCompileInputs.cache
+D:\Repositorio\plantillaMVC\plantillaApi.Data\obj\Debug\netstandard2.0\plantillaApi.Data.AssemblyInfoInputs.cache
+D:\Repositorio\plantillaMVC\plantillaApi.Data\obj\Debug\netstandard2.0\plantillaApi.Data.AssemblyInfo.cs
+D:\Repositorio\plantillaMVC\plantillaApi.Data\bin\Debug\netstandard2.0\plantillaApi.Data.pdb
+D:\Repositorio\plantillaMVC\plantillaApi.Data\obj\Debug\netstandard2.0\plantillaApi.Data.dll
+D:\Repositorio\plantillaMVC\plantillaApi.Data\obj\Debug\netstandard2.0\plantillaApi.Data.pdb

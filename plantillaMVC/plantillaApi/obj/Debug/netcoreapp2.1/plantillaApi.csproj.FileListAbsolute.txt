@@ -1,0 +1,16 @@
+D:\Repositorio\plantillaMVC\plantillaApi\obj\Debug\netcoreapp2.1\plantillaApi.csprojAssemblyReference.cache
+D:\Repositorio\plantillaMVC\plantillaApi\obj\Debug\netcoreapp2.1\plantillaApi.csproj.CoreCompileInputs.cache
+D:\Repositorio\plantillaMVC\plantillaApi\obj\Debug\netcoreapp2.1\plantillaApi.AssemblyInfoInputs.cache
+D:\Repositorio\plantillaMVC\plantillaApi\obj\Debug\netcoreapp2.1\plantillaApi.AssemblyInfo.cs
+D:\Repositorio\plantillaMVC\plantillaApi\bin\Debug\netcoreapp2.1\plantillaApi.deps.json
+D:\Repositorio\plantillaMVC\plantillaApi\bin\Debug\netcoreapp2.1\plantillaApi.runtimeconfig.json
+D:\Repositorio\plantillaMVC\plantillaApi\bin\Debug\netcoreapp2.1\plantillaApi.runtimeconfig.dev.json
+D:\Repositorio\plantillaMVC\plantillaApi\bin\Debug\netcoreapp2.1\plantillaApi.dll
+D:\Repositorio\plantillaMVC\plantillaApi\bin\Debug\netcoreapp2.1\plantillaApi.pdb
+D:\Repositorio\plantillaMVC\plantillaApi\obj\Debug\netcoreapp2.1\plantillaApi.dll
+D:\Repositorio\plantillaMVC\plantillaApi\obj\Debug\netcoreapp2.1\plantillaApi.pdb
+D:\Repositorio\plantillaMVC\plantillaApi\bin\Debug\netcoreapp2.1\plantillaApi.Data.dll
+D:\Repositorio\plantillaMVC\plantillaApi\bin\Debug\netcoreapp2.1\plantillaApi.Data.pdb
+D:\Repositorio\plantillaMVC\plantillaApi\obj\Debug\netcoreapp2.1\plantillaApi.csproj.CopyComplete
+D:\Repositorio\plantillaMVC\plantillaApi\bin\Debug\netcoreapp2.1\plantillaApi.Core.dll
+D:\Repositorio\plantillaMVC\plantillaApi\bin\Debug\netcoreapp2.1\plantillaApi.Core.pdb
