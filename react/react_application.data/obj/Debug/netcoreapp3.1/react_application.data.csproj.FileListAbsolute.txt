@@ -1,0 +1,5 @@
+C:\Users\Administrator\Desktop\Repositorio Git\react_application\react_application.data\bin\Debug\netcoreapp3.1\react_application.data.deps.json
+C:\Users\Administrator\Desktop\Repositorio Git\react_application\react_application.data\bin\Debug\netcoreapp3.1\react_application.data.dll
+C:\Users\Administrator\Desktop\Repositorio Git\react_application\react_application.data\obj\Debug\netcoreapp3.1\react_application.data.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\Repositorio Git\react_application\react_application.data\obj\Debug\netcoreapp3.1\react_application.data.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Repositorio Git\react_application\react_application.data\obj\Debug\netcoreapp3.1\react_application.data.AssemblyInfo.cs
