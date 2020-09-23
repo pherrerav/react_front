@@ -5,6 +5,7 @@
   "dependencies": {
     "@o2xp/react-datatable": "^1.1.60",
     "admin-lte": "^3.0.0-alpha",
+    "axios": "^0.20.0",
     "bootstrap": "^4.5.2",
     "font-awesome": "^4.7.0",
     "gsap": "^3.5.0",

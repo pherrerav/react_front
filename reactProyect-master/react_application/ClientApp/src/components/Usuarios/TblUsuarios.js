@@ -1,14 +1,26 @@
 import { Datatable } from "@o2xp/react-datatable";
 import React, { Fragment, useState } from "react";
 import ModalForm from "./Modal";
-import { CallSplit as CallSplitIcon } from "@material-ui/icons";
 import { Icon } from "@material-ui/core";
 import { chunk } from "lodash";
 
-// Advanced Example
-
-const TblUsuarios = () => {
+const TblUsuarios = (props) => {
   const [modalShow, setModalShow] = useState(false);
+  const [action, setAction] = useState("Nuevo");
+  const [rowselected, setRowSelected] = useState({
+    id: "",
+    name: "",
+    email: "",
+    gender: "",
+    status: "",
+    created_at: "",
+    updated_at: "",
+  });
+
+  const registroSeleccionado = (registro) => {
+    setRowSelected(registro);
+    setModalShow(true);
+  };
 
   const options = {
     title: "Usuarios del Sistema",
@@ -41,31 +53,31 @@ const TblUsuarios = () => {
           inputType: "input",
         },
         {
-          id: "age",
-          label: "age",
+          id: "email",
+          label: "email",
           colSize: "80px",
           editable: true,
-          dataType: "number",
-          valueVerification: (val) => {
-            let error = val > 100 ? true : false;
-            let message = val > 100 ? "Value is too big" : "";
-            return {
-              error: error,
-              message: message,
-            };
-          },
+          dataType: "email",
         },
         {
-          id: "adult",
-          label: "adult",
+          id: "gender",
+          label: "gender",
+          colSize: "100px",
+          editable: true,
+          inputType: "select",
+          values: ["Female", "Male"],
+        },
+        {
+          id: "status",
+          label: "status",
           colSize: "50px",
           editable: true,
-          dataType: "boolean",
-          inputType: "checkbox",
+          inputType: "select",
+          values: ["Active", "Inactive"],
         },
         {
-          id: "birthDate",
-          label: "birth date",
+          id: "created_at",
+          label: "Created at",
           colSize: "120px",
           editable: true,
           dataType: "date",
@@ -73,56 +85,16 @@ const TblUsuarios = () => {
           dateFormat: "YYYY-MM-DDTHH:MM:ss",
         },
         {
-          id: "color",
-          label: "color",
-          colSize: "100px",
+          id: "updated_at",
+          label: "Updated at",
+          colSize: "120px",
           editable: true,
-          inputType: "select",
-          values: ["green", "blue", "brown"],
+          dataType: "date",
+          inputType: "datePicker",
+          dateFormat: "YYYY-MM-DDTHH:MM:ss",
         },
       ],
-      rows: [
-        {
-          id: "50cf",
-          age: 28,
-          name: "Kerr Mayo",
-          adult: true,
-          birthDate: "1972-09-04T11:09:59",
-          color: "green",
-        },
-        {
-          id: "209",
-          age: 34,
-          name: "Freda Bowman",
-          adult: true,
-          birthDate: "1988-03-14T09:03:19",
-          color: "blue",
-        },
-        {
-          id: "2dd81ef",
-          age: 14,
-          name: "Becky Lawrence",
-          adult: false,
-          birthDate: "1969-02-10T04:02:44",
-          color: "green",
-        },
-        {
-          id: "2sdf456",
-          age: 19,
-          name: "Lucas Michel",
-          adult: true,
-          birthDate: "1985-09-10T04:02:44",
-          color: "blue",
-        },
-        {
-          id: "qsf24fe5",
-          age: 35,
-          name: "Jean Vaillant",
-          adult: true,
-          birthDate: "1985-10-25T04:02:44",
-          color: "green",
-        },
-      ],
+      rows: props.tableData,
     },
     features: {
       canDownload: true,
@@ -138,6 +110,7 @@ const TblUsuarios = () => {
           title: "Nuevo",
           icon: <Icon className="fa fa-plus-circle" color="primary" />,
           onClick: () => {
+            setAction("Nuevo");
             setModalShow(true);
           },
         },
@@ -146,16 +119,15 @@ const TblUsuarios = () => {
         {
           title: "Editar",
           icon: <Icon className="fa fa-edit" color="primary" />,
-          onClick: (rows) => console.log(rows),
+          onClick: (rows) => {
+            setAction("Editar");
+            registroSeleccionado(rows);
+          },
         },
       ],
     },
   };
-  /*let llenarFormulario = (json) => {
-    $.each(json, function (k, v) {
-      $(`#${k}`).val(v);
-    });
-  };*/
+
   const actionsRow = ({ type, payload }) => {
     console.log(type);
     console.log(payload);
@@ -178,7 +150,12 @@ const TblUsuarios = () => {
 
   return (
     <Fragment>
-      <ModalForm show={modalShow} onHide={() => setModalShow(false)} />
+      <ModalForm
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+        rowselected={rowselected}
+        action={action}
+      />
       <Datatable
         options={options}
         refreshRows={refreshRows}

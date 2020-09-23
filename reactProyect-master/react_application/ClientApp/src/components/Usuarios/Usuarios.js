@@ -1,7 +1,16 @@
-﻿import React, { Fragment } from "react";
+﻿import React, { useState, useEffect } from "react";
+import axios from "axios";
 import TblUsuarios from "./TblUsuarios";
 
 const Usuarios = () => {
+  const [tableData, setTableData] = useState();
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await axios("https://gorest.co.in/public-api/users");
+      setTableData(result.data.data);
+    };
+    fetchData();
+  }, []);
   return (
     <div className="content-wrapper">
       <div className="content-header">
@@ -26,7 +35,7 @@ const Usuarios = () => {
               <div className="card card-danger card-outline">
                 <div className="card-body">
                   <div className="row">
-                    <TblUsuarios />
+                    <TblUsuarios tableData={tableData} />
                   </div>
                 </div>
               </div>

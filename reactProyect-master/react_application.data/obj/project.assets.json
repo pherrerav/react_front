@@ -4925,23 +4925,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
+    "C:\\Users\\pherr\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Repositorio Git\\react_application\\react_application.data\\react_application.data.csproj",
+      "projectUniqueName": "D:\\Repositorio\\reactProyect-master\\react_application.data\\react_application.data.csproj",
       "projectName": "react_application.data",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\Repositorio Git\\react_application\\react_application.data\\react_application.data.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Desktop\\Repositorio Git\\react_application\\react_application.data\\obj\\",
+      "projectPath": "D:\\Repositorio\\reactProyect-master\\react_application.data\\react_application.data.csproj",
+      "packagesPath": "C:\\Users\\pherr\\.nuget\\packages\\",
+      "outputPath": "D:\\Repositorio\\reactProyect-master\\react_application.data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\pherr\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4993,7 +4993,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
